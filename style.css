@@ -1,0 +1,95 @@
+:root {
+  --purple-haze-light: #946c8d;
+  --purple-haze-middle: #4f3750;
+  --purple-haze-dark: #362339;
+  --desert-sun-light: #f6d1b0;
+  --desert-sun-middle: #cb9870;
+  --desert-sun-dark: #a57158;
+  --sage-light: #c9c9a9;
+  --sage-middle: #8d8960;
+  --sage-dark: #5c5c42;
+  --taupe-light: #e5e5e5;
+  --taupe-middle: #aaa1a0;
+  --taupe-dark: #707070;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  background-color: var(--sage-dark);
+  z-index: 1;
+}
+
+#sidebar p {
+  color: var(--taupe-light);
+}
+
+#sidebar h1 {
+  color: var(--taupe-light);
+}
+
+#main {
+  position: absolute;
+  left: 25%;
+  margin: 8pt;
+}
+
+#main {
+  display: inline-block;
+  text-align: justify;
+  clear: both;
+  color: var(--purple-haze-dark)
+}
+
+body {
+  background-color: var(--sage-light)
+}
+
+.flexcontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexcontainer table {
+  flex: 1;
+  margin:10px;
+}
+
+#hair {
+  position: fixed;
+  top: 0;
+  left: -10%;
+  width: 75%;
+  float: left;
+  z-index: -1;
+}
+
+#hairdummy {
+  float: left;
+  width: 75%;
+  shape-outside: polygon(0% 0%, 52% 0%, 55% 20%, 45% 50%, 49% 60%, 30% 90%, 0 100%);
+  shape-margin: 8px;
+}
+
+
+.gallary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  margin: 8pt;
+}
+
+.gallary img{
+  width: 25%;
+  min-width: 25em;
+  margin: 1em;
+  flex: 1;
+  overflow-y: scroll;
+}
